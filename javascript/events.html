@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+   function key(){
+   let nm=document.getElementById("nm").value
+   document.getElementById("snm").innerHTML=nm.toUpperCase()
+     setInterval(()=>{
+        document.getElementById("snm").innerHTML=nm
+     },3000)
+   }
+
+    </script>      
+</head>
+<body>
+    <center>
+    Name <input type="text" id="nm" onkeypress="key()">
+  
+    <h1 id="snm">Your name will be here</h1>
+    </center>
+</body>
+</html>

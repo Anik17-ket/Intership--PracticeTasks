@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     
+       function getsoon(){
+
+        let email = localStorage.getItem("email")
+        let pass = localStorage.getItem("pass")
+
+
+         let uemail=document.getElementById("em").value
+         let upass=document.getElementById("en").value
+        
+         if(email==uemail && pass==upass )
+       {
+         window.location.href="welcome.html"
+       }
+       else{
+         alert("Invalid credentials")
+       }
+         
+
+    }
+       
+    </script>
+</head>
+<body>
+    <center>
+      Email :<input type="email" placeholder="Enter the email" id="em"><br><br>
+      Password:<input type="password" placeholder="Enter the password" id ="en"><br><br>
+      <input type ="button" value ="Login" onclick="getsoon()">
+      <a href="register.html"> New user? SignUp</a>
+       <h1 id="abc"></h1>
+
+    </center>
+</body>
+</html>

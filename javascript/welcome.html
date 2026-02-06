@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+   <script>
+  function add(){
+    let user = localStorage.getItem("name")
+
+    document.getElementById("sp").innerHTML=user
+  }
+
+   </script>
+     
+  </head>
+  <body onload="add()" >
+   <center>
+    <h1>welcome to new page</h1>
+    <h1 id="sp"></h1>
+    </center>
+  </body>
+</html>
